@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<!--18.02.2022 р. Якусевич Владислав Олександрович-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yakusevych2</title>
+</head>
+
+<body>
+    <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <h3>Форма входа</h3>
+            <label>Ваш логин <input type="text" name="login"></label><br><br>
+            <label>Ваш пароль <input type="password" name="password-field"></label><br><br>
+            <label>Введіть Ваш коментар<br><br>
+                <textarea rows="10" name="comment-field">Текст коментаря</textarea><br>
+            </label>
+            <label><input type="checkbox" checked name="subscribe-field"> Підписати Вас на розсилку?<br><br></label>
+            Яка Ваша стать?<br><br>
+            <label>
+                <input type="radio" name="question-one" value="Чоловіча"> чоловік<br>
+                <input type="radio" checked name="question-one" value="Жіноча"> жінка<br>
+            </label><br>
+            <label>
+                Ваш рік народження:<br><br>
+                <select name="year">
+                    <option value="1998 рік">1998</option>
+                    <option value="1999 рік">1999</option>
+                </select>
+            </label><br><br>
+            <label>
+                Ваші улюблені дні тижня:<br><br>
+                <select size="7" name="days" multiple>
+                    <option value="Понеділок">Понеділок</option>
+                    <option value="Вівторок">Вівторок</option>
+                    <option value="Середа">Середа</option>
+                    <option value="Четвер">Четвер</option>
+                    <option value="П&#8242;ятниця">П'ятниця</option>
+                    <option value="Субота">Субота</option>
+                    <option value="Неділя" selected>Неділя</option>
+                </select>
+            </label><br><br>
+            <label>
+                Виберіть зображення для свого аватара:<br><br>
+                <input type="file" name="avatar">
+            </label><br>
+            <h1>Оплата послуг</h1>
+            <label>
+                Сума платежу <input type="hidden | text" name="account_number" value="15"> грн.
+            </label><br><br>
+            <input type="submit" value="Відправити">
+    </form>
+</body>
+
+</html>

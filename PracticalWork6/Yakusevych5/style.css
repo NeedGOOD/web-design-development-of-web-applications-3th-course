@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+}
+
+.comment {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.face {
+    border-radius: 150px;
+}
+
+img[src="quote-start.png"] {
+    display: inline-flex;
+}
+
+.info {
+    display: inline-block;
+
+    white-space: pre-line;
+
+    font-style: italic;
+    font-family: monospace;
+    text-align: center;
+}
+
+.text {
+    padding-inline: 24px;
+    padding-block: 12px;
+
+    background-image: url(./quote-start.png), url(./quote-end.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+
+    font-style: italic;
+    font-family: monospace;
+}
+
+.quote {
+    padding: 0px;
+    margin: 0px;
+
+    white-space: pre-line;
+}
+
+.initials {
+    text-align: right;
+}

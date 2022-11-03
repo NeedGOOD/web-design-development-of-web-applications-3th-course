@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-inline: auto;
+    width: fit-content;
+}
+
+div {
+    width: 250px;
+
+    background-color: yellow;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    display: block;
+
+    width: 250px;
+    padding: 7px;
+
+    background-color: yellow;
+}
+
+.main:hover {
+    text-decoration: underline;
+
+    color: red;
+}
+
+.box {
+    display: none;
+}
+
+li:hover .box {
+    display: block;
+}
+
+.additionally {
+    display: block;
+
+    width: 300px;
+    padding: 5px;
+
+    background-color: pink;
+}
+
+.additionally:hover {
+    display: block;
+
+    text-decoration: underline;
+
+    color: white;
+}

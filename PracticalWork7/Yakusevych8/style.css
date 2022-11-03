@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 500px;
+}
+
+div {
+    width: 250px;
+    height: 50px;
+
+    text-align: center;
+}
+
+p {
+    margin: 0px;
+}
+
+.box-one {
+    margin-right: 50%;
+    
+    background-color: aquamarine;
+}
+
+.box-two {
+    background-color: purple;
+}
+
+.box-three {
+    background-color: red;
+}
+
+.box-four {
+    background-color: green;
+}
+
+.box-five {
+    margin-left: -50%;
+}

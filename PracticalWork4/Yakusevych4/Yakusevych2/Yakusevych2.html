@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<!-- 27.02.2022 р. Якусевич Владислав Олександрович -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yakusevych2</title>
+</head>
+
+<body>
+    <form oninput="result1.value=(kg.value*2.20462).toFixed(0), result2.value=(kg.value*0.01).toFixed(1),
+    result.value=Number(oneNumber.value)+Number(twoNumber.value),
+    slider.value=parseInt(a.value);
+    var clean=Number(time.value)*Number(money.value); var salary=Number(clean)*Number(tax.value);
+    result3.value=Number(clean)+Number(salary)">
+        <fieldset>
+            <label>Введите ваш вес в кг: 
+            <input type="number" name="kg" autofocus><br></label>
+            <p>Ваш вес в фунтах - <output name="result1">0</output></p>
+            <p>Ваш вес в центерах - <output name="result2">0</output></p>
+        </fieldset>
+
+        <fieldset>
+            <label><h1>Введи 2 числа - получи сумму</h1>
+            <p><input type="number" name="oneNumber"> + <input type="number" name="twoNumber"> = 
+            <output name="result">0</output></p></label>
+        </fieldset>
+
+        <fieldset>
+            <label><h1>Сколько вы хотите заработать?</h1>
+            0 <input type="range" min="0" max="100" step="1" value="0" name="a" id="a"> 100</label>
+            <p><output style="color:blue; margin-left: 70px" name="slider" for="a">0</output></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Расчитай ЗП</legend>
+            <label>Количество часов <input type="number" name="time" value="0"></label><br><br>
+            <label>Ставка ₴ <input type="number" name="money" value="0"></label><br><br>
+            <label>Налог <input type="number" name="tax" value="0"></label><br><br>
+            <p>Зарплата всего <b>грн <output name="result3">0</output></b></p>
+        </fieldset>
+        <input type="submit" value="Поехали">
+        <input type="reset" value="Чисто">
+    </form>
+</body>
+
+</html>

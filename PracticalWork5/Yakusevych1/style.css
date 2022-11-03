@@ -1,0 +1,40 @@
+p {
+    text-align: center;
+    color: green;
+}
+
+.paragraph {
+    color: red;
+}
+
+#paragraph {
+    color: pink;
+}
+
+.link {
+    color: red;
+}
+
+.menu-all {
+    color: pink;
+}
+
+.menu-main {
+    color: green;
+}
+
+a {
+    color: inherit;
+}
+
+.menu-all {
+    list-style-type: none;
+}
+
+.last {
+    list-style-type: square;
+}
+
+.menu-main.exactly-last a {
+    text-decoration: none;
+}

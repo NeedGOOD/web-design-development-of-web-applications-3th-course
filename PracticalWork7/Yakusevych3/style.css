@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-inline-start: 0px;
+
+    display: flex;
+}
+
+p {
+    margin: 0px;
+}
+
+.class-one {
+    background-color: orange;
+
+    margin-bottom: 46px;
+    padding-inline-end: 200px;
+}
+
+.class-two {
+    background-color: blue;
+
+    margin-bottom: 10px;
+    padding-inline-end: 150px;
+}
+
+.class-three {
+    background-color: greenyellow;
+
+    margin-bottom: 28px;
+    padding-inline-end: 100px;
+}

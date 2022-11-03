@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0px;
+}
+
+.class-one {
+    background-color: orange;
+
+    width: 200px;
+    float: left;
+}
+
+.class-two {
+    background-color: blue;
+
+    width: 250px;
+    float: left;
+}
+
+.class-three {
+    background-color: greenyellow;
+
+    width: 225px;
+    float: left;
+}
+
+.class-four {
+    background-color: green;
+
+    clear: both;
+}
+
+.text {
+    text-align: center;
+}

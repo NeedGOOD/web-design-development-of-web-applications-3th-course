@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    
+    font-family: sans-serif;
+    
+    width: min-content;
+    margin-inline: auto;
+}
+
+div {
+    border-width: 1px;
+}
+
+.box-one {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+
+    border-style: solid;
+
+    width: 650px;
+
+    color: darkcyan;
+    border-color: black;
+    background-color: yellow;
+}
+
+.box-two {
+    float: left;
+    
+    border-style: solid;
+
+    width: 150px;
+    height: 250px;
+
+    padding-top: 10px;
+    padding-left: 10px;
+
+    color: darkcyan;
+    border-color: black;
+    background-color: greenyellow;
+}
+
+.box-three {
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size:larger;
+    
+    border-style: solid;
+
+    width: 350px;
+    height: 250px;
+
+    color: yellow;
+    border-color: black;
+    background-color: darkcyan;
+}
+
+.box-four {
+    float: left;
+
+    font-weight: bold;
+    font-size: x-large;
+    
+    border-style: solid;
+
+    width: 150px;
+    height: 250px;
+
+    color: black;
+    border-color: black;
+    background-color: cyan;
+}
+
+.box-five {
+    text-align: center;
+    font-size: smaller;
+
+    border-style: solid;
+
+    width: 650px;
+    height: 40px;
+
+    color: darkcyan;
+    border-color: black;
+    background-color: yellow;
+}
+
+.box-two p {
+    font-size:medium;
+
+    margin: 0px;
+}
+
+.box-four p {
+    margin-top: 75px;
+    margin-left: 30px;
+}
+
+.box-one p {
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.box-one>p::first-letter {
+    color: blue;
+}

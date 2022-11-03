@@ -1,0 +1,21 @@
+div.icons {
+    display: inline-flex;
+}
+
+div.icon {
+    width: 100px;
+    height: 100px;
+
+    background-image: url(./white_sprait.png);
+}
+
+div.google { background-color: red; background-position: left top; }
+div.twitter { background-color: skyblue; background-position: -100px top; }
+div.gmail { background-color: orange; background-position: -200px top; }
+div.facebook { background-color: blue; background-position: -300px top; }
+div.wifi { background-color: darkorange; background-position: -400px top; }
+div.vk { background-color: blue; background-position: left -100px; }
+div.email { background-color: yellow; background-position: -100px -100px; }
+div.yandex { background-color: red; background-position: -200px -100px; }
+div.edit { background-color: darkturquoise; background-position: -300px -100px; }
+div.ok { background-color: darkorange; background-position: -400px -100px; }

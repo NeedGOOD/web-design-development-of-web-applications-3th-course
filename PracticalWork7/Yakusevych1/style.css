@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+.class-one {
+    background-color: orange;
+}
+
+.class-two {
+    background-color: blue;
+}
+
+.class-three {
+    background-color: greenyellow;
+}

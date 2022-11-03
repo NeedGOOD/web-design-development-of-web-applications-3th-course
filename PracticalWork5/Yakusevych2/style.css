@@ -1,0 +1,11 @@
+h1+p {
+    font-size: 20px;
+}
+
+p>code {
+    color: red;
+}
+
+p+p>code {
+    color: pink;
+}

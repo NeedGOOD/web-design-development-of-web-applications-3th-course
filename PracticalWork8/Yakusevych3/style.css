@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: large;
+
+    margin: 0px;
+
+    color: white;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: dodgerblue;
+}
+
+li {
+    list-style-type: none;
+
+    padding-block: 15px;
+    padding-inline: 10px;
+
+    background-color: dodgerblue;
+}
+
+.tablet {
+    justify-content: space-evenly;
+}
+
+.mobile {
+    flex-direction: column;
+}
+
+.mobile>li {
+    width: 100%;
+    text-align: center;
+
+    border-style: inset;
+    border-width: thin;
+    border-color: whitesmoke;
+}

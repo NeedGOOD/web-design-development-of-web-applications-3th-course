@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin-inline: auto;
+    width: min-content;
+    font-size: small;
+}
+
+form {
+    border-style: solid;
+    border-color: #bdbdbd;
+    background-color: #eeeeee;
+    width: inherit;
+    padding-inline-start: 3px;
+    padding-inline-end: 10px;
+}
+
+div[name=main] {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+div[name=main]>input,
+div[name=main]>select,
+div[name=main]>textarea,
+div[name=main]>div[name=global] {
+    width: 250px;
+    padding: 4px;
+    margin: 2px;
+}
+
+input[type=email] {
+    border-style: solid;
+    border-color: #b1b531;
+    background-color: #fdffb2;
+}
+
+input[type=password] {
+    border-style: solid;
+    border-color: #ba2c92;
+    background-color: #fdc2ec;
+}
+
+input[name=repeat-password] {
+    border-style: solid;
+    border-color: #ba2c92;
+    background-color: #fdc2ec;
+}
+
+input[name=name] {
+    border-style: solid;
+    border-color: #b1b531;
+    background-color: #fdffb2;
+}
+
+input[name=surname] {
+    border-style: solid;
+    border-color: #b1b531;
+    background-color: #fdffb2;
+}
+
+label {
+    font-weight: bold;
+    width: max-content;
+}
+
+label[for=sex-male], label[for=sex-female] {
+    font-weight: normal;
+}
+
+select {
+    border-style: solid;
+    border-color: #2d23a1;
+    background-color: #bdb8f9;
+}
+
+textarea {
+    min-height: 25px;
+    max-height: 75px;
+    resize: vertical;
+    border-style: solid;
+    border-color: #299029;
+    background-color: #c6ffc5;
+}
+
+label[for=choice-one], label[for=choice-two], label[for=choice-three] {
+    font-weight: normal;
+}
+
+input[type=submit] {
+    border-style: outset;
+    border-color: white;
+    background-color: #a2ff9b;
+}
+
+input[type=reset] {
+    border-style: outset;
+    border-color: white;
+    background-color: #ff8d94;
+}

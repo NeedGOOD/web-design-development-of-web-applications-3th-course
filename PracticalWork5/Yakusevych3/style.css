@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 200px;
+    margin-inline: auto;
+}
+
+.block {
+    background-color: forestgreen ;
+    padding: 5px;
+    margin: 2px;
+}
+
+.block>h1 {
+    color: white;
+    font-size: large;
+    font-weight: normal;
+    margin-block: unset;
+}
+
+.box {
+    background-color: darkorange;
+    padding: 5px;
+    font-size: large;
+    margin-block: unset;
+    list-style-type: none;
+}
+
+.box>li {
+    padding-block: 5px;
+}

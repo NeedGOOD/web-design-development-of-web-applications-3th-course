@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 768px;
+
+    margin-inline: auto;
+}
+
+div {
+    border-style: solid;
+
+    border-width: 1px;
+    margin: 15px;
+
+    border-color: blue;
+    background-color: darkblue;
+}
+
+div a {
+    text-decoration: none;
+
+    color: white;
+}
+
+div a:hover {
+    color: aqua;
+    background-color: white;
+}
+
+.box-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    padding-block: 10px;
+    padding-inline: 13px;
+}
+
+.box-b {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.box-c {
+    display: flex;
+    justify-content: center;
+}
+
+.box-d {
+    display: flex;
+    justify-content: center;
+}
+
+.box-d a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.box-d>a:nth-child(3) {
+    width: min-content;
+}
+
+.box-e {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-e a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.box-e>a:nth-child(3) {
+    width: min-content;
+}
+
+.box-f {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box-f a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.box-f>a:nth-child(3) {
+    width: min-content;
+}
+
+.box-g {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box-g a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.box-g>a:nth-child(3) {
+    width: min-content;
+}
+
+.box-h {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-i {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-i a {
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}

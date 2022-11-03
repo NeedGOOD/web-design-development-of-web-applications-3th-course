@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<!--19.02.2022 р. Якусевич Владислав Олександрович-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yakusevych3</title>
+</head>
+
+<body>
+    <form action="https://echo.htmlacademy.ru" method="post">
+        <h2>Регистрация</h2>
+        <label>
+            Ваш логин (email):<br>
+            <input type="text" name="email">
+        </label><br>
+        <label>
+            Пароль:<br>
+            <input type="password" name="password-field">
+        </label><br>
+        <label>
+            Информация о себе:<br>
+            <textarea rows="4" name="comment-field"></textarea>
+        </label><br>
+        <label><input type="checkbox" checked name="subscribe-field"> Подписаться на рассылку</label>
+        <br>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+    <hr>
+    <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <h2>Профиль</h2>
+        <label>Ваш пол:
+            <input type="radio" name="question-one" value="Мужская"> Мужская
+            <input type="radio" checked name="question-one" value="Женская"> Женский
+        </label><br>
+        <label>
+            Месяц и год рождения:<br>
+            <input type="month" name="month-year">
+        </label><br>
+        <label>
+            Знакомые технологии:<br>
+            <select size="4" name="Markup-language" multiple>
+                <option value="HTML">HTML</option>
+                <option value="CSS" selected>CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Node.js">Node.js</option>
+            </select>
+        </label><br>
+        <label>
+            Фото: <input type="file" name="photo">
+        </label><br>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+
+</html>

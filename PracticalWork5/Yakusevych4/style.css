@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: fit-content;
+    margin-inline: auto;
+}
+
+main {
+    margin: 16px;
+    padding: 8px;
+
+    background-image: url("./cloud.png");
+    background-size: cover;
+}
+
+fieldset {
+    border-top-color: blue;
+    border-right-color: yellow;
+    border-bottom-color: green;
+    border-left-color: red;
+
+    border-width: 4px;
+    padding: unset;
+}
+
+.name-one {
+    color: red;
+    font-size: xx-large;
+    margin-block-start: unset;
+}
+
+.name-two {
+    color: white;
+    font-size: x-large;
+    font-weight: normal;
+    margin-block-end: unset;
+}
+
+li {
+    color: yellow;
+    font-size: large;
+}
+
+p {
+    color: blue;
+    font-size: large;
+    margin-block: unset;
+}
+
+a {
+    margin: 16px;
+}

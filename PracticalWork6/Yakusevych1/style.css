@@ -1,0 +1,10 @@
+body {
+    width: 1280px;
+    height: 946px;
+
+    margin-block: unset;
+
+    background-image: url(./1.png), url(./5.png), url(./6.png), url(./4.png), url(./2.png), url(./3.png), url(./0.png);
+    background-repeat: no-repeat;
+    background-position: left bottom, 280px 294px, 240px 169px, 911px 568px, 992px 350px, 775px 366px;
+}

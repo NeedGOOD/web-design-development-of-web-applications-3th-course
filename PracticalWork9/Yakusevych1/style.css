@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+    max-width: 768px;
+    margin-inline: auto;
+
+    background-color: cadetblue;
+}
+
+.link {
+    position: fixed;
+
+    text-decoration: none;
+
+    min-width: max-content;
+
+    width: 40px;
+    height: 40px;
+
+    padding-top: 12px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    right: 10px;
+
+    transition: 0.5s;
+
+    color: white;
+    background-color: black;
+}
+
+.link:hover {
+    width: 220px;
+}
+
+.link:hover::after {
+    content: " US ON TELEGRAM";
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    text-shadow: 2px 2px red, -2px -2px cyan;
+    font-weight: bolder;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+
+    margin-block: 5px;
+    padding-block: 35px;
+
+    font-size: 25px;
+
+    color: white;
+    border-color: white;
+    background-color: darkblue;
+}
+
+header::before {
+    content: "the_";
+}
+
+header::after {
+    content: "_size";
+}
+
+section {
+    margin-block: 5px;
+}
+
+.top {
+    display: flex;
+}
+
+main div {
+    border-style: solid;
+
+    border-radius: 15px;
+    border-width: 1px;
+
+    border-color: white;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: white;
+}
+
+.photo>img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+img {
+    transition: 0.7s;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+img:hover:nth-child(1) {
+    transform-origin: left top;
+}
+
+img:hover:nth-child(2) {
+    transform-origin: right top;
+}
+
+img:hover:nth-child(3) {
+    transform-origin: left bottom;
+}
+
+img:hover:nth-child(4) {
+    transform-origin: right bottom;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    font-size: x-large;
+    font-weight: bold;
+
+    box-shadow: inset 15px 15px 15px orange;
+
+    writing-mode: vertical-rl;
+
+    padding-block: 40px;
+
+    color: orange;
+    background-color: white;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+p {
+    border-radius: 15px;
+
+    width: 100%;
+    height: 200px;
+
+    margin: 0px;
+    padding: 5px;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+
+    width: 100%;
+
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+
+    color: white;
+    border-color: white;
+    background-color: darkblue;
+}
+
+h1 {
+    font-size: 2.5em;
+
+    margin: 2px;
+}
+
+div a {
+    text-decoration: none;
+    font-weight: bold;
+    
+    padding-inline: 5px;
+
+    color: white;
+}
+
+div a:hover {
+    color: darkred;
+}
+
+label {
+    display: block;
+    
+    font-style: italic;
+    font-size: x-small;
+    font-weight: bold;
+
+    padding-top: 30px;
+}
+
+input {
+    padding-block: 5px;
+}
+
+.name {
+    padding-block: 25px;
+}
+
+@media (max-width: 768px) {
+    .photo,
+    .top,
+    .bottom {
+        display: block;
+    }
+
+    p {
+        margin-block: 5px;
+    }
+
+    .title {
+        writing-mode: unset;
+
+        font-size: medium;
+    }
+}

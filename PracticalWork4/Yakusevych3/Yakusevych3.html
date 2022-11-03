@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<!-- 01.04.2022 р. Якусевич Владислав Олександрович -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yakusevych3</title>
+</head>
+
+<body>
+    <form oninput="info.value=parseInt(rating.value)">
+        <fieldset style="border-radius: 10px; width: 364px; height: 65px;">
+            <legend>Личные данные</legend>
+            <table>
+                <tr>
+                    <td>
+                        ID отзыва<br>
+                        <input name="ID" disabled value="12345">
+                    </td>
+                    <td>
+                        <label>
+                            Имя путешетвенника<br>
+                            <input type="text" required placeholder="Введите Ваше имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="border-radius: 10px; width: 264px; height: 235px;">
+            <legend>Отзыв о поездке</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            Страна/город визита<br>
+                            <select>
+                                <optgroup label="Украина">
+                                    <option>Киев</option>
+                                    <option>Житомир</option>
+                                    <option>Львов</option>
+                                    <option>Одесса</option>
+                                    <option>Харьков</option>
+                                </optgroup>
+                                <optgroup label="США">
+                                    <option>Нью-Йорк</option>
+                                    <option>Вашингтон</option>
+                                    <option>Лос-Анджелес</option>
+                                    <option>Лас-Вегас</option>
+                                    <option>Майами</option>
+                                </optgroup>
+                                <optgroup label="Япония">
+                                    <option>Токио</option>
+                                    <option>Осака</option>
+                                    <option>Хиросима</option>
+                                    <option>Кобе</option>
+                                    <option>Фукуока</option>
+                                </optgroup>
+                                <optgroup label="Испания">
+                                    <option>Мадрид</option>
+                                    <option>Барселона</option>
+                                    <option>Севилья</option>
+                                    <option>Бильбао</option>
+                                    <option>Валенсия</option>
+                                </optgroup>
+                                <optgroup label="Италия">
+                                    <option>Рим</option>
+                                    <option>Милан</option>
+                                    <option>Неаполь</option>
+                                    <option>Флоренция</option>
+                                    <option>Венеция</option>
+                                </optgroup>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Оценка поездки<br>
+                            0 <input type="range" min="0" max="10" step="1" value="0" name="rating" id="rating"> 10
+                        </label>
+                    </td>
+                    <td>
+                        <output type="text" name="info" for="rating" style="border: 1px solid; border-radius: 4px; padding: 0px 10px">0</output>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>
+                            Текст отзыва<br>
+                            <textarea type="text" rows="7px" cols="32px" required placeholder="Это было просто мяу!" spellcheck="false"></textarea>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset style="border-radius: 10px; width: 356px; height: 240px;">
+            <legend>Оценка отеля</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            Название отеля<br>
+                            <input type="text" required placeholder="Название по-английски" pattern="^[a-zA-Z]+$">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Дата въезда<br>
+                            <input type="date" required>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Цвет кроватки<br>
+                            <input type="color" style="width: 150px; height: 30px;" value="#fa0000">
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            Оценка обедов<br>
+                            <select>
+                                <option>Фууу</option>
+                                <option>По настроению</option>
+                                <option selected>Нормально</option>
+                                <option>Отлично</option>
+                                <option>Великолепно</option>
+                                <option>Подушечки оближешь</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>
+                            Самая вкусная рыба<br>
+                            <select multiple style="width: 350px; height: 100px;" required>
+                                <option>Норвежский лосось</option>
+                                <option>Зубатка</option>
+                                <option>Морской окунь</option>
+                                <option>Карась</option>
+                                <option>Зеркальный карп</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+
+</html>

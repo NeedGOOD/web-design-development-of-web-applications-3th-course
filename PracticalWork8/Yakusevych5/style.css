@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: aqua;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.text {
+    width: 100%;
+
+    padding-block: 20px;
+    padding-inline: 10px;
+
+    background-color: yellowgreen;
+}
+
+.one {
+    background-color: blueviolet;
+}
+
+.two {
+    background-color: yellow;
+}
+
+.one,
+.two {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 40px;
+
+    padding-top: 10px;
+}
+
+footer {
+    background-color: blue;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 40px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yakusevych3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form method="post">
+        <div name="main">
+            <label>E-maill:</label><input type="email" name="email">
+        </div>
+
+        <div name="main">
+            <label>Пароль:</label><input type="password" name="password">
+        </div>
+        
+        <div name="main">
+            <label>Пароль еще раз:</label><input type="password" name="repeat-password">
+        </div>
+
+        <div name="main">
+            <label>Имя:</label><input type="text" name="name">
+        </div>
+        
+        <div name="main">
+            <label>Фамилия:</label><input type="text" name="surname">
+        </div>
+        
+        <div name="main">
+            <label for="sex-male sex-female">Пол:</label>
+            <div name="global">
+                <input type="radio" name="sex" id="sex-male"><label for="sex-male">мужской</label>
+                <input type="radio" name="sex" id="sex-female"><label for="sex-female">женский</label>
+            </div>
+        </div>
+        
+        <div name="main">
+            <label>Город:</label>
+            <select name="city">
+                <option value="Житомир">Житомир</option>
+                <option value="Київ">Київ</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Львів">Львів</option>
+            </select>
+            
+        </div>
+        
+        <div name="main">
+            <label>О себе:</label>
+            <textarea name="text" rows="5"></textarea>
+        </div>
+        
+        <div name="main">
+            <label>Соглашения:</label>
+            <div name="global">
+                <input type="checkbox" name="choice" id="choice-one"><label for="choice-one">Получать рассылки сайту</label><br>
+                <input type="checkbox" name="choice" id="choice-two"><label for="choice-two">Соглашаюсь с правилами сайта</label><br>
+                <input type="checkbox" name="choice" id="choice-three"><label for="choice-three">Скрыть профиль на сайте</label><br>
+            </div>
+        </div>
+        
+        <div name="main">
+            <div name="global">
+                <input type="submit" value="Зарегистрироваться">
+                <input type="reset" value="Сброс">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
